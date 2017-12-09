@@ -26,6 +26,7 @@ const routes: Route[] = [
   { path: 'shopping-cart', component: ShoppingCartComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'order-success', component: OrderSuccessComponent },
+  { path: 'my/orders', component: MyOrdersComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'admin/products', component: AdminProductsComponent },
   { path: 'admin/orders', component: AdminOrdersComponent }
