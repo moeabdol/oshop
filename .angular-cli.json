@@ -65,6 +65,9 @@
     },
     "service": {
       "spec": false
+    },
+    "guard": {
+      "spec": false
     }
   }
 }
