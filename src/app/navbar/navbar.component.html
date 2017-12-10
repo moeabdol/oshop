@@ -18,7 +18,7 @@
         </li>
       </ng-template>
 
-			<li class="nav-item dropdown" *ngIf="user$ | async as user; else anonymousUser">
+			<li class="nav-item dropdown" *ngIf="authService.user$ | async as user; else anonymousUser">
 				<a class="nav-link dropdown-toggle" href="#" id="dropdown01"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{ user.displayName }}
