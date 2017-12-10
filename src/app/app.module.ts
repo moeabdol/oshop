@@ -9,6 +9,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
 import { AuthService } from './auth.service';
+import { UserService } from './user.service';
 import { AuthGuard } from './auth.guard';
 
 import { AppComponent } from './app.component';
@@ -76,7 +77,11 @@ const routes: Route[] = [
     AngularFireAuthModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [
+    AuthService,
+    UserService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
