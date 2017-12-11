@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 
 import { AuthService } from './auth.service';
 import { UserService } from './user.service';
+import { CategoryService } from './category.service';
 import { AuthGuard } from './auth.guard';
 import { AdminGuard } from './admin.guard';
 
@@ -88,6 +89,7 @@ const routes: Route[] = [
   providers: [
     AuthService,
     UserService,
+    CategoryService,
     AuthGuard,
     AdminGuard
   ],
